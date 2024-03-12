@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jomhuria&family=Lusitana:wght@400;700&display=swap" rel="stylesheet">
+        <script src = "https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    </head>
+
+    <body>
+    <section>
+        <img src = 'intro_assets/earth.png' id="earth">
+        <img src = 'intro_assets/earthpan.png' id="earthpan">
+        <img src = 'intro_assets/sun.png' id="sun">
+        <img src = 'intro_assets/crowd1.png' id="crowd1">
+        <img src = 'intro_assets/crowd2.png' id="crowd2">
+        <img src = 'intro_assets/crowd1.png' id="crowd3">
+        <img src = 'intro_assets/crowd2.png' id="crowd4">
+        <img src = 'intro_assets/foreground.png' id="foreground">
+        <h1 id="title" >does your <span class="red">voice</span><br>really make a <span class="red">difference</span>?</h1>
+    </section>
+
+   
+        <div class="profile">
+            <img src = "intro_assets/profile.png" id="picture">
+            <p class="author"><b>Justin<br>Jiang</b></p>
+        </div>
+        <p class = "intro"><b>Words are powerful.</b><br></br>Words have the potential to build up, or bring down. Leaders manipulate 
+            words with powerful rhetoric to sway crowds and impose their ideas. Whilst the old English rhyme says <i>“sticks and stones 
+            may break your bones, but words may never hurt you”</i>, words do indeed have the power to hurt.<br><br>
+            Words have been used throughout history to fight for change, such as Martin Luther King Jr’s “I have a dream” speech and 
+            Paul Keating’s “Redfern Speech”, but do your words hold the same power today? As we tackle a vast number of issues, 
+            such as climate change, does your voice have the power to bring about change? Do your words make a difference? <br><br>
+            <i>Do you make a difference?</i></p>
+        <h2 class = "article"><b>-<br>A Hunk of Black Coal</h2>
+        <p class = "article">When Scott Morrison was Australia’s treasurer two years ago, he held a hunk of black coal in his hand 
+            in the house of representatives saying,</p>
+        <!-- <p class = "quote"><b>“Don’t be afraid. Don’t be scared,<br>it won’t hurt you.”</b></p> -->
+
+        <div class='morrison' id="morrison">
+            <img src = 'morrison_assets/body.png' id="body">
+            <img src = 'morrison_assets/arm_move.png' id="arm">
+            <img src = 'morrison_assets/quote_bg.png' id="bg">
+        </div>
+
+        <p class = "article">However, scientists and statistics provided by the United Nations point to the exact opposite. Yes, our 
+            world has naturally gotten more colder and warmer over the course of a million years, but today we are experiencing extremely 
+            rapid warming as a direct result of human activities, namely the burning of fossil fuels that generate greenhouse gas 
+            emissions.<br><br>So what? How does it affect me?<br><br></p>
+        <p class='emph'><br><br><b><i>Implications of Climate Change</i></b><br></p>
+        <div class="gallery" id="galleryDiv">
+            <div class="content" id="content">
+                <img src = 'intro_assets/slide1.png' id="slide1">
+                <img src = 'intro_assets/slide2.png' id="slide2">
+                <img src = 'intro_assets/slide3.png' id="slide3">
+                <img src = 'intro_assets/slide4.png' id="slide4">
+                <img src = 'intro_assets/slide5.png' id="slide5">
+            </div>
+        </div>
+        <p class="label"><b><i>Scroll for climate impacts</i></b></p>
+        <p class="article"><br><br>Contrary to what Mr Morrison stated two years ago, we do indeed need to be afraid as the continual use 
+            of non-renewable energy sources could most definitely hurt this home we call earth.</p>
+
+        <h2 class='article'><b>-<br>Overpromise & Underdeliver</b></h2>
+        <p class="article">So, climate change has been an issue for a while now, but how has Australia responded? What has been the progress 
+            in tackling this undoubted issue?<br><br>Under the Morrison government, efforts in increasing climate action has been extremely 
+            underwhelming. Whilst the government adopted a net-zero target by 2025 (meaning that an emissions are balanced by absorbing an 
+            equivalent amount from the atmosphere), Australia is falling short on this target by a considerable margin.<br><br></p>
+
+        <div class=graph1>
+            <div id="co2percap2020"></div>
+            <div id="world2020" style="display:block"></div>
+            <div id="world2019" style="display:none"></div>
+            <div id="world2018" style="display:none"></div>
+            <div id="world2017" style="display:none"></div>
+            <div id="world2016" style="display:none"></div>
+            <div id="world2015" style="display:none"></div>
+            <div id="buttons">
+                <p class="world">Choose year to explore Co2 Emissions across the worlds</p>
+                <input type="button" class = "button" name="cap2020" value="2020" onclick="showDiv2020cap()" />
+                <input type="button" class = "button" name="cap2019" value="2019" onclick="showDiv2019cap()" />
+                <input type="button" class = "button" name="cap2018" value="2018" onclick="showDiv2018cap()" />
+                <input type="button" class = "button" name="cap2017" value="2017" onclick="showDiv2017cap()" />
+                <input type="button" class = "button" name="cap2016" value="2016" onclick="showDiv2016cap()" />
+                <input type="button" class = "button" name="cap2015" value="2015" onclick="showDiv2015cap()" />
+            </div>
+         </div>
+        
+         <p class="article"><br><br>Australia’s improvement in our carbon emissions has been evidently insufficient, as from 2015 to 2020, the country 
+             has only had a 1.493 tonnes per person improvement as well as only a one rank improvement in our emissions from 10th to 11th. As of 
+             2020, Australia is projected to reach roughly 22% below 2005 levels by 2030, which falls short of its Paris Agreement target of 26-28%. 
+             Whilst it is clear that the government needs to increase their ambition in committing to, and also increasing their 2030 target, they are 
+             doing the opposite. The 2020-21 budget allocates a large sum of money to non-renewable energy infrastructures. <br><br><b><i>If other countries 
+                 were to follow suit, warming could reach over 3 degrees and up to 4 degrees higher.</i></b><br><br><br>
+
+            So, yes climate change is an issue. The Australian government has been promising climate action, but has been considerably under-delivering. 
+            What’s our response? What can we do about it? How can we make a climate change?</p>
+        
+        <h2 class = "article"><b>-<br>Reason to Protest</h2>
+        <p class="article">Whilst Mr Morrison suggests that protests only act as “an unlimited license to disrupt people’s lives”, protests have the power 
+            to keep politicians accountable. Your voice has the power to change. As people grow tired and unsatisfied with the lack of change, climate strikes 
+            and protests have been used as an instrument in making collective voices heard.</p>
+        <p class='quote'><br><i><b>Do you think striking is an effective mechanism in fighting for change, or is it just an inconvenience?</b></i></p>
+        <p class="article"><br>Climate protests are a manifestation of dissent and dissatisfaction for the urgent need to change policy. Non-violent protests and 
+            strikes have been a force behind positive social change by promoting awareness at both a micro level and gaining greater media attention at a macro 
+            level. In shifting public opinion, strikes increases the pressure on people in power and paves a way for new strategies in combatting global warming.<br><br>
+            In September 2019, the Fridays for the Future (FFF) protest campaign organised the third Global Climate Strike, with 7.6 million people participating 
+            in 6000 protests across 185 countries. This gives us an opportunity to explore what the contributions climate strikes have on the strive for change.
+        <br><br><br><b>The effectiveness and contributions climate strikes have had can be explored in three areas:</b></p>
+        <p class="emph"><br><i>1. Media attention allows for shift in public perception<br><br>2. Social and psychological impacts on those who participate, and<br><br>
+            3. The pressure put on those in political power.</i></p>
+
+        <h2 class = "article"><b>1. Media Attention</h2>
+        <p class="article">A significant impact climate protests and strikes have on change is its ability to grab the attention of the media. The amount of people 
+            participating in these movements consequently lead to a bigger interest of the media in the cause. This is evident through the increased amount of tweets 
+            surrounding the topic of climate change and action throughout the years. The effect strikes have on media attention is exemplified through the evident 
+            spike in 2019, following the great amount of protests organised by FFF.<br></p>
+        <div class="graph2">
+            <div id="twitterPlot"></div>
+        </div>
+        <p class="article">The increased coverage of the issue on major news outlets and social media platforms further leads to an increased awareness of climate change, 
+            as well as shifts in public perception.</p>
+        <div class="graph2">
+            <div id="droughtConcern"></div>
+        </div>
+        <p class="article">As New South Wales was declared in drought during the latter half of 2018, the state had the highest levels of concern for climate-induced 
+            droughts. This season of droughts combined with the ongoing coverage of climate action through media outlets had an undoubted impact on the public perception 
+            surrounding this issue.</p>
+
+        <h2 class = "article"><b>2. Social and <br>Psychological Impacts</h2>
+        <p class="article">With the lack of progress made in combatting this issue, people may start to feel a sense of hopelessness and despair. However, the collective 
+            act of strikes and protests has the power to overpower the lack of action with a sense of community and solidarity. Strikes become places where ideas emerge, 
+            disinformation is eliminated, and new strategies can 
+            be developed. </p>
+        <div class="graph3">
+            <div id="feelings"></div>
+            <div id="statement"></div>
+        </div>
+
+        <h2 class = "article"><b>3. Political Change</h2>
+        <p class="article">Striking can also have a positive impact on policy-making as politicians tend to listen to what is being demanded. This is especially true for 
+            political candidates seeking to get voted in for election. The most recent example is shown in Australia’s 2022 election with the labour party led by Anthony 
+            Albanese being voted in over the other parties. One significant factor leading to his success was his promises surrounding Australia’s climate.<br><br><br></p>
+        <p class="emph">
+            This is shown with him promising that he will deliver a <b><i>“big shift in climate policy”</i></b> to make the country 
+                a <b><i>“renewable energy superpower”.</i></b></p>
+            <p class="quote"><b>”We have an opportunity now to end the climate wars in Australia...”<br><br>
+                Albanese has also “promised to adopt more ambitious emissions targets”.</b></p>
+
+        <h2 class = "article"><b>-<br>So, What Now?</h2>
+        <p class="article">With the rise of the climate movement, people’s climate awareness has undoubtedly risen. Whilst there is still a lot of work to be done before 
+            the greatest victory for the climate movement to come, we can look at the progress made already throughout the years in transforming the world toward a more 
+            sustainable one.<br><br>
+            With a new political party being voted in this year, continued pressure for climate action should be done. Let’s see whether we make progress in negating this 
+            issue, or whether it will be another case of <i>“overpromise and underdeliver”.</i><br><br></p>
+
+        <p class = "sources"><b><i>References:</b><br><br>
+            Bennet, E., 2018. Climate of the Nation 2018. Climate of the Nation. [online] The Australia Institute. Available at: <https://australiainstitute.org.au/report/climate-of-the-nation-2018/> [Accessed 5 June 2022].<br>
+            Cave, D. and Albeck-Ripka, L., 2019. Why Is Australia Trying to Shut Down Climate Activism? (Published 2019). [online] Nytimes.com. Available at: <https://www.nytimes.com/2019/11/06/world/australia/australia-climate-protests-coal.html> [Accessed 5 June 2022].<br>
+            Climateactiontracker.org. 2022. Climate Action Tracker: Australia. [online] Available at: <https://climateactiontracker.org/countries/australia/> [Accessed 5 June 2022].<br>
+            de Moor, J., Uba, K., Wennerhag, M., Wahlström, M. and De Vydt, M., 2019. Protest for a future II.<br>
+            Dolsak, N. and Prakash, A., 2019. Climate Strikes: What They Accomplish And How They Could Have More Impact. [online] Forbes. Available at: <https://www.forbes.com/sites/prakashdolsak/2019/09/14/climate-strikes-what-they-accomplish-and-how-they-could-have-more-impact/?sh=3b26323b5eed> [Accessed 5 June 2022].<br>
+            Merzian, R., Quickie, A., Bennett, E., Campbell, R. and Swann, T., 2019. Climate of the Nation 2019. Climate of the Nation. [online] The Australia Institute. Available at: <http://Climate of the Nation 2019> [Accessed 5 June 2022].<br>
+            Moore, F. and Obradovich, N., 2020. Exploring #ExtremeWeather on Twitter. [online] Twitter. Available at: <https://developer.twitter.com/en/use-cases/build-for-good/extreme-weather> [Accessed 5 June 2022].<br>
+            Neves, F., 2020. Climate Strikes: how effective is it to participate in them?. [online] leaders for climate action. Available at: <https://lfca.earth/ALL_au/strikes/> [Accessed 5 June 2022].<br>
+            Quickie, A. and Bennet, E., 2017. Climate of the Nation 2017: Australian attitudes on climate change. Climate of the Nation. [online] The Australia Institute. Available at: <https://australiainstitute.org.au/report/climate-of-the-nation-2017-australian-attitudes-on-climate-change/> [Accessed 5 June 2022].<br>
+            Quickie, A. and Bennett, E., 2020. Climate of the Nation 2020. Climate of the Nation. The Australia Institute.<br>
+            United Nations. 2022. Climate Action Fast Facts. [online] Available at: <https://www.un.org/en/climatechange/science/key-findings#physical-science> [Accessed 6 June 2022].<br>
+        </i></p>
+
+
+        <script src = 'script.js'></script>
+    </body>
+
+</html>
